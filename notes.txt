@@ -1,2 +1,5 @@
 created index.html + styles.css; linked JS files and CSS to index.html
 COMMITTED
+
+created main.js and linked it to index.html; created header with h1
+COMMITTED

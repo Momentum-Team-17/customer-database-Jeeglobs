@@ -1,3 +1,5 @@
+console.log('customers.js.linked');
+
 const customers = [
   {
     name: {
