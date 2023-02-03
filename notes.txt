@@ -21,3 +21,6 @@ COMMITTED
 
 added src to img in JS
 COMMITTED
+
+added emailElement and its text
+COMMITTED

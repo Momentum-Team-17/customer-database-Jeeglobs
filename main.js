@@ -27,26 +27,36 @@ for (let customer of customers) {
 
 
 function buildCustomerHtml(individual) {
+    // function that is called in the loop above
 
     let cardElement = document.createElement('div');
     cardElement.classList.add('customer-card');
-    // create div; add class to div
+    // create cardElement<div>; add class .customer-card to cardElement<div>
     container.appendChild(cardElement);
     // nest cardElement<div> inside container<section>
 
     let thumbElement = document.createElement('img');
     thumbElement.classList.add('thumbnail');
     thumbElement.src = individual.picture.thumbnail;
-    // create img; add class to img; add src to img
+    // create thumbElement<img>; add class .thumbnail to thumbElement<img>; add src to thumbnail<img>
     cardElement.appendChild(thumbElement);
     // nest thumbElement<img> inside cardElement<div>
 
     let nameElement = document.createElement('h2');
     nameElement.classList.add('full-name');
-    // create h2; add class to h2
-    let text = document.createTextNode(`${individual.name.title} ${individual.name.first} ${individual.name.last}`);
-    nameElement.appendChild(text);
-    // create textNode for full-name; put full-name inside nameElement<h2>
+    // create nameElement<h2>; add class .full-name to nameElement<h2>
+    let nameText = document.createTextNode(`${individual.name.title} ${individual.name.first} ${individual.name.last}`);
+    nameElement.appendChild(nameText);
+    // create textNode for nameElement<h2>; put textNode inside nameElement<h2>
     cardElement.appendChild(nameElement);
     // nest nameElement<h2> inside cardElement<div>
+
+    let emailElement = document.createElement('p');
+    emailElement.classList.add('email');
+    // create emailElement<p>; add class .email to emailElement<p>
+    let emailText = document.createTextNode(individual.email);
+    emailElement.appendChild(emailText);
+    // creat textNode for emailElement<p>; put textNode inside emailElement<p>
+    cardElement.appendChild(emailElement);
+    // nest emailElement<p> inside cardElement<div>
 }
