@@ -15,3 +15,6 @@ COMMITTED
 
 started working on main.js by following class example; stopped during nameElement
 COMMITTED
+
+reorganized JS; finished nameElement; so far everything is showing up on page as expected
+COMMITTED
