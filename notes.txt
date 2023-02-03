@@ -12,3 +12,6 @@ COMMITTED
 
 grabbed container and made loop for customers
 COMMITTED
+
+started working on main.js by following class example; stopped during nameElement
+COMMITTED

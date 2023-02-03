@@ -1,4 +1,4 @@
-console.log('states.js.linked');
+console.log('states.js linked');
 
 const usStates = [
   { name: 'ALABAMA', abbreviation: 'AL' },

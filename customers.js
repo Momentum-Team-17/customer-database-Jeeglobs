@@ -1,4 +1,4 @@
-console.log('customers.js.linked');
+console.log('customers.js linked');
 
 const customers = [
   {
