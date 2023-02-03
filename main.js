@@ -24,33 +24,29 @@ for (let customer of customers) {
     buildCustomerHtml(customer);
 }
 // loop through the array of customers
-// APPLIED FROM CLASS EXAMPLE
 
-// WORKING OFF OF CLASS EXAMPLE BELOW
 
 function buildCustomerHtml(individual) {
-    // console.log(customer.name);
-    // if i don't comment out line above (consol.log...) i get an error
 
     let cardElement = document.createElement('div');
     cardElement.classList.add('customer-card');
-    // create div and add a class
+    // create div; add class to div
     container.appendChild(cardElement);
-    // put cardElement<div> inside container<section>
+    // nest cardElement<div> inside container<section>
 
     let thumbElement = document.createElement('img');
     thumbElement.classList.add('thumbnail');
-    // create img and add a class
+    thumbElement.src = individual.picture.thumbnail;
+    // create img; add class to img; add src to img
     cardElement.appendChild(thumbElement);
-    // put thumbElement<img> inside cardElement<div>
-    // NEED TO ADD SRC TO IMG
+    // nest thumbElement<img> inside cardElement<div>
 
     let nameElement = document.createElement('h2');
     nameElement.classList.add('full-name');
-    // create h2 and add a class
+    // create h2; add class to h2
     let text = document.createTextNode(`${individual.name.title} ${individual.name.first} ${individual.name.last}`);
-    // create a textNode for the name
     nameElement.appendChild(text);
-    // put full-name textNode inside nameElement<h2>
+    // create textNode for full-name; put full-name inside nameElement<h2>
     cardElement.appendChild(nameElement);
+    // nest nameElement<h2> inside cardElement<div>
 }
