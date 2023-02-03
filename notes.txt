@@ -9,3 +9,6 @@ COMMITTED
 
 created example of customer-card layout in html and deferred main.js
 COMMITTED
+
+grabbed container and made loop for customers
+COMMITTED
