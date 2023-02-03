@@ -6,3 +6,6 @@ COMMITTED
 
 created <main> with nested #container; should be ready to start working on main.js
 COMMITTED
+
+created example of customer-card layout in html and deferred main.js
+COMMITTED
