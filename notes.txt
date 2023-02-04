@@ -39,3 +39,6 @@ COMMITTED
 
 added cityStateElement and its text
 COMMITTED
+
+adjusted CSS for .customer-card; removed text for individual.name.title
+COMMITTED

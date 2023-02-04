@@ -56,7 +56,7 @@ function buildCustomerHtml(individual) {
     let nameElement = document.createElement('h2');
     nameElement.classList.add('full-name');
     // create nameElement<h2>; add class .full-name to nameElement<h2>
-    let nameText = document.createTextNode(`${capitalizeFirstLetter(individual.name.title)} ${capitalizeFirstLetter(individual.name.first)} ${capitalizeFirstLetter(individual.name.last)}`);
+    let nameText = document.createTextNode(`${capitalizeFirstLetter(individual.name.first)} ${capitalizeFirstLetter(individual.name.last)}`);
     // create textNode for nameElement<h2>; call function capitalizeFirstLetter in textNode
     nameElement.appendChild(nameText);
     // put textNode inside nameElement<h2>
