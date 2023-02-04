@@ -12,11 +12,15 @@
 .customer-card {
     justify-content: center;
     width: 250px;
+    margin: 15px 30px;
 }
 
 .thumbnail {
     object-fit: cover;
     width: 100%;
+    border-radius: 30% 70%;
+    /* margin: 0 auto; */
+    /* tried width: 80%; and margin: 0 auto; expected to get a smaller img centered. I got a smaller img, but it did not center. Why? */
 }
 
 .full-name {
@@ -27,7 +31,7 @@
 .email {
     text-align: center;
     font-size: 0.85rem;
-    color: darkgrey;
+    color: #666666;
 }
 
 .street-address {

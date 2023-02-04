@@ -54,3 +54,6 @@ COMMITTED
 
 adjusted CSS for text in customer-cards; I'm getting an error concerning moment.js that I can't figure out
 COMMITTED
+
+fixed error; more CSS for .customer-cards; need to fix dates somehow
+COMMITTED

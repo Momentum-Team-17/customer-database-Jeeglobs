@@ -5,7 +5,7 @@ console.log('main.js linked');
 // <section id="customer-container">
 
 // <div class="customer-card">
-//     <img class="thumbnail" src="" alt="">
+//     <img class="thumbnail">
 //     <h2 class="full-name"><h2>
 //     <p class="email"></p>
 //     <p class="street-address"></p>
