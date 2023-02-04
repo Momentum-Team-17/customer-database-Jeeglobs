@@ -42,3 +42,6 @@ COMMITTED
 
 adjusted CSS for .customer-card; removed text for individual.name.title
 COMMITTED
+
+called function nameToAbbr for states
+COMMITTED
