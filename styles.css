@@ -9,6 +9,40 @@
 }
 
 .customer-card {
+    justify-content: center;
     min-width: 250px;
     max-width: 400px;
+}
+
+.thumbnail {
+    object-fit: cover;
+    width: 100%;
+}
+
+.full-name {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+.street-address {
+    text-align: center;
+
+}
+
+.city-state-zip {
+    text-align: center;
+
+}
+
+.birthdate {
+    text-align: center;
+
+}
+
+.date-registered {
+    text-align: center;
+
 }
