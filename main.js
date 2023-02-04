@@ -26,6 +26,12 @@ for (let customer of customers) {
 // loop through the array of customers
 
 
+// FUNCTION FOR CAPITALIZING NAMES
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+// https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+
 function buildCustomerHtml(individual) {
     // function that is called in the loop above
 
@@ -37,7 +43,7 @@ function buildCustomerHtml(individual) {
 
     let thumbElement = document.createElement('img');
     thumbElement.classList.add('thumbnail');
-    thumbElement.src = individual.picture.thumbnail;
+    thumbElement.src = individual.picture.large;
     // create thumbElement<img>; add class .thumbnail to thumbElement<img>; add src to thumbnail<img>
     cardElement.appendChild(thumbElement);
     // nest thumbElement<img> inside cardElement<div>
@@ -45,7 +51,8 @@ function buildCustomerHtml(individual) {
     let nameElement = document.createElement('h2');
     nameElement.classList.add('full-name');
     // create nameElement<h2>; add class .full-name to nameElement<h2>
-    let nameText = document.createTextNode(`${individual.name.title} ${individual.name.first} ${individual.name.last}`);
+    let nameText = document.createTextNode(`${capitalizeFirstLetter(individual.name.title)} ${capitalizeFirstLetter(individual.name.first)} ${capitalizeFirstLetter(individual.name.last)}`);
+    // called function capitalizeFirstLetter in textNode
     nameElement.appendChild(nameText);
     // create textNode for nameElement<h2>; put textNode inside nameElement<h2>
     cardElement.appendChild(nameElement);

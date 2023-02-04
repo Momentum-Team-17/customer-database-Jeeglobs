@@ -30,3 +30,6 @@ COMMITTED
 
 added object-fit to .thumbnail; centered all text in .customer-card
 COMMITTED
+
+used function capitalizeFirstLetter to capitalize names;
+COMMITTED
