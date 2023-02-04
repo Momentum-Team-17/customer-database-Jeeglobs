@@ -51,3 +51,6 @@ COMMITTED
 
 added registeredElement and its text; dates formatted using moment.js
 COMMITTED
+
+adjusted CSS for text in customer-cards; I'm getting an error concerning moment.js that I can't figure out
+COMMITTED
