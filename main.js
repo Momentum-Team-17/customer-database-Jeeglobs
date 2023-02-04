@@ -88,10 +88,18 @@ function buildCustomerHtml(individual) {
     let birthdateElement = document.createElement('p');
     birthdateElement.classList.add('birthdate');
     // create birthdateElement<p>; add class .birthdate to birthdateElement<p>
-    let birthdateText = document.createTextNode(`DOB: ${individual.dob.date}`);
+    let birthdateText = document.createTextNode(`DOB: ${moment(individual.dob.date)}`);
     birthdateElement.appendChild(birthdateText);
-    // create textNode for birthdateElement<p>; put textNode inside birthdateElement<p>
+    // create textNode for birthdateElement<p>; put textNode inside birthdateElement<p>; moment.js used to format dates
     cardElement.appendChild(birthdateElement);
     // nest birthdateElement<p> inside cardElement<div>
-    // !!! NEED TO USE MOMENT.JS HERE TO FORMAT DATES!!!
+
+    let registeredElement = document.createElement('p');
+    registeredElement.classList.add('date-registered');
+    // create registeredElement<p>; add class .date-registered to registeredElement<p>
+    let registeredText = document.createTextNode(`Customer since: ${moment(individual.registered.date)}`);
+    registeredElement.appendChild(registeredText);
+    // create TextNode for registeredElement<p>; put textNode inside registeredElement<p>; moment.js used to format dates
+    cardElement.appendChild(registeredElement);
+    // nest registeredElement<p> inside cardElement<div>
 }

@@ -48,3 +48,6 @@ COMMITTED
 
 added birthdateElement and its text; need to format dates
 COMMITTED
+
+added registeredElement and its text; dates formatted using moment.js
+COMMITTED
