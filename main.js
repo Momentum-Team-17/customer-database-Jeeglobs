@@ -84,4 +84,14 @@ function buildCustomerHtml(individual) {
     // create textNode for cityStateElement<p>; put textNode inside cityStateElement<p>
     cardElement.appendChild(cityStateElement);
     // nest cityStateElement<p> inside cardElement<div>
+
+    let birthdateElement = document.createElement('p');
+    birthdateElement.classList.add('birthdate');
+    // create birthdateElement<p>; add class .birthdate to birthdateElement<p>
+    let birthdateText = document.createTextNode(`DOB: ${individual.dob.date}`);
+    birthdateElement.appendChild(birthdateText);
+    // create textNode for birthdateElement<p>; put textNode inside birthdateElement<p>
+    cardElement.appendChild(birthdateElement);
+    // nest birthdateElement<p> inside cardElement<div>
+    // !!! NEED TO USE MOMENT.JS HERE TO FORMAT DATES!!!
 }

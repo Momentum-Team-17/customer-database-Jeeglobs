@@ -45,3 +45,6 @@ COMMITTED
 
 called function nameToAbbr for states
 COMMITTED
+
+added birthdateElement and its text; need to format dates
+COMMITTED
