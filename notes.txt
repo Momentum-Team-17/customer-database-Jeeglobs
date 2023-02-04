@@ -24,3 +24,6 @@ COMMITTED
 
 added emailElement and its text
 COMMITTED
+
+added flex-wrap to #customer-container; added max-width and min-width to .customer-card
+COMMITTED
