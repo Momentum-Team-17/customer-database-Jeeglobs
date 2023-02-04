@@ -52,9 +52,9 @@ function buildCustomerHtml(individual) {
     nameElement.classList.add('full-name');
     // create nameElement<h2>; add class .full-name to nameElement<h2>
     let nameText = document.createTextNode(`${capitalizeFirstLetter(individual.name.title)} ${capitalizeFirstLetter(individual.name.first)} ${capitalizeFirstLetter(individual.name.last)}`);
-    // called function capitalizeFirstLetter in textNode
+    // create textNode for nameElement<h2>; call function capitalizeFirstLetter in textNode
     nameElement.appendChild(nameText);
-    // create textNode for nameElement<h2>; put textNode inside nameElement<h2>
+    // put textNode inside nameElement<h2>
     cardElement.appendChild(nameElement);
     // nest nameElement<h2> inside cardElement<div>
 
@@ -66,4 +66,13 @@ function buildCustomerHtml(individual) {
     // creat textNode for emailElement<p>; put textNode inside emailElement<p>
     cardElement.appendChild(emailElement);
     // nest emailElement<p> inside cardElement<div>
+
+    let streetElement = document.createElement('p');
+    streetElement.classList.add('street-address');
+    // create streetElement<p>; add class .street-element to streetElement<p>
+    let streetText = document.createTextNode(`${individual.location.street.number} ${individual.location.street.name}`);
+    streetElement.appendChild(streetText);
+    // create textNode for streetElement<p>; put textNode inside streetElement<p>
+    cardElement.appendChild(streetElement);
+    // nest streetElement<p> inside cardElement<div>
 }

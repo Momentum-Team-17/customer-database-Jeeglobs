@@ -33,3 +33,6 @@ COMMITTED
 
 used function capitalizeFirstLetter to capitalize names;
 COMMITTED
+
+added streetElement and its text
+COMMITTED
