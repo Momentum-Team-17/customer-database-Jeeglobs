@@ -26,6 +26,11 @@ for (let customer of customers) {
 // loop through the array of customers
 
 
+// !!! NEED TO MAKE FUNCTION TO ABREVIATE STATES !!!
+// !!! NEED TO MAKE FUNCTION TO ABREVIATE STATES !!!
+// !!! NEED TO MAKE FUNCTION TO ABREVIATE STATES !!!
+
+
 // FUNCTION FOR CAPITALIZING NAMES
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -75,4 +80,14 @@ function buildCustomerHtml(individual) {
     // create textNode for streetElement<p>; put textNode inside streetElement<p>
     cardElement.appendChild(streetElement);
     // nest streetElement<p> inside cardElement<div>
+
+    let cityStateElement = document.createElement('p');
+    cityStateElement.classList.add('city-state-zip');
+    // create cityStateElement<p>; add class .city-state-zip to cityStateElement<p>
+    let cityStateText = document.createTextNode(`${individual.location.city}, ${individual.location.state} ${individual.location.postcode}`);
+    // !!! ADDED COMMA; NEED TO MAKE FUNCTION TO ABBREVIATE STATES !!!!
+    cityStateElement.appendChild(cityStateText);
+    // create textNode for cityStateElement<p>; put textNode inside cityStateElement<p>
+    cardElement.appendChild(cityStateElement);
+    // nest cityStateElement<p> inside cardElement<div>
 }

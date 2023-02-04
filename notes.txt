@@ -36,3 +36,6 @@ COMMITTED
 
 added streetElement and its text
 COMMITTED
+
+added cityStateElement and its text
+COMMITTED
