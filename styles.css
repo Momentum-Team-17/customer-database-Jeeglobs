@@ -1,6 +1,10 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-left: 5%;
 }
 
 #customer-container {
@@ -10,17 +14,18 @@
 }
 
 .customer-card {
-    justify-content: center;
+    /* justify-content: center; */
     width: 250px;
-    margin: 15px 30px;
+    margin: 10px 30px;
 }
 
 .thumbnail {
+    width: 66%;
+    border-radius: 60% 100%;
+    margin-top: 5%;
+    margin-left: 17%;
     object-fit: cover;
-    width: 100%;
-    border-radius: 30% 70%;
-    /* margin: 0 auto; */
-    /* tried width: 80%; and margin: 0 auto; expected to get a smaller img centered. I got a smaller img, but it did not center. Why? */
+    /* tried (margin: auto;) to center img, but it did not work. margin-left 17% worked. Don't know why.*/
 }
 
 .full-name {
@@ -31,27 +36,27 @@
 .email {
     text-align: center;
     font-size: 0.85rem;
-    color: #666666;
+    color: #747474;
 }
 
 .street-address {
     text-align: center;
     margin-bottom: -12px;
-    font-size: 0.85rem:
+    font-size: 0.85rem;
 }
 
 .city-state-zip {
     text-align: center;
-    font-size: 0.85rem:
+    font-size: 0.85rem;
 }
 
 .birthdate {
     text-align: center;
     margin-bottom: -12px;
-    font-size: 0.85rem:
+    font-size: 0.85rem;
 }
 
 .date-registered {
     text-align: center;
-    font-size: 0.85rem:
+    font-size: 0.85rem;
 }

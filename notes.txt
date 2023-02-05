@@ -57,3 +57,6 @@ COMMITTED
 
 fixed error; more CSS for .customer-cards; need to fix dates somehow
 COMMITTED
+
+CSS is finished; need to fix dates
+COMMITTED
