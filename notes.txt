@@ -66,3 +66,6 @@ COMMITTED
 
 cleaned up main.js; still need to fix dates
 COMMITTED
+
+fixed dates
+COMMITTED

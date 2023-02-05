@@ -43,6 +43,8 @@ function buildCustomerHtml(individual) {
     let thumbElement = document.createElement('img');
     thumbElement.classList.add('thumbnail');
     thumbElement.src = individual.picture.large;
+    thumbElement.alt = "Customer Image";
+    // not sure if .alt is actually adding the alt to the img
     cardElement.appendChild(thumbElement);
 
     // nameElement === <h2 class="full-name">(nameText)</h2>
@@ -74,10 +76,10 @@ function buildCustomerHtml(individual) {
     cardElement.appendChild(cityStateElement);
 
     // birthdateElement === <p class="birthdate">(birthdateText)</p>
-    // moment.js used for dates--NEED TO FIX!
+    // moment.js used for dates; used .format("MMM Do YYYY");
     let birthdateElement = document.createElement('p');
     birthdateElement.classList.add('birthdate');
-    let birthdateText = document.createTextNode(`DOB: ${moment(individual.dob.date)}`);
+    let birthdateText = document.createTextNode(`DOB: ${moment(individual.dob.date).format("MMM Do YYYY")}`);
     birthdateElement.appendChild(birthdateText);
     cardElement.appendChild(birthdateElement);
 
@@ -85,9 +87,7 @@ function buildCustomerHtml(individual) {
     // moment.js used for dates--NEED TO FIX!
     let registeredElement = document.createElement('p');
     registeredElement.classList.add('date-registered');
-    let registeredText = document.createTextNode(`Customer since: ${moment(individual.registered.date)}`);
+    let registeredText = document.createTextNode(`Customer since: ${moment(individual.registered.date).format("MMM Do YYYY")}`);
     registeredElement.appendChild(registeredText);
     cardElement.appendChild(registeredElement);
-
-    // USE PUSH/POP/SHIFT/ETC TO FIX DATES???
 }
