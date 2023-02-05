@@ -4,7 +4,7 @@
 }
 
 h1 {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #customer-container {
@@ -20,17 +20,18 @@ h1 {
 }
 
 .thumbnail {
-    width: 66%;
+    width: 64%;
     border-radius: 60% 100%;
     margin-top: 5%;
-    margin-left: 17%;
+    margin-left: 18%;
+    margin-bottom: -2%;
     object-fit: cover;
-    /* tried (margin: auto;) to center img, but it did not work. margin-left 17% worked. Don't know why.*/
+    /* tried (margin: auto;) to center img, but it did not work. margin-left 18% worked. Don't know why.*/
 }
 
 .full-name {
     text-align: center;
-    margin-bottom: -12px;
+    margin-bottom: -5%;
 }
 
 .email {
@@ -41,7 +42,7 @@ h1 {
 
 .street-address {
     text-align: center;
-    margin-bottom: -12px;
+    margin-bottom: -5%;
     font-size: 0.85rem;
 }
 
@@ -52,7 +53,7 @@ h1 {
 
 .birthdate {
     text-align: center;
-    margin-bottom: -12px;
+    margin-bottom: -5%;
     font-size: 0.85rem;
 }
 

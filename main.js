@@ -102,4 +102,7 @@ function buildCustomerHtml(individual) {
     // create TextNode for registeredElement<p>; put textNode inside registeredElement<p>; moment.js used to format dates
     cardElement.appendChild(registeredElement);
     // nest registeredElement<p> inside cardElement<div>
+
+
+    // USE PUSH/POP/SHIFT/ETC TO FIX DATES???
 }
