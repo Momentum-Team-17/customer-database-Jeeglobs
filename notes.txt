@@ -69,3 +69,6 @@ COMMITTED
 
 fixed dates
 COMMITTED
+
+changed 'let container' to 'const container in JS
+COMMITTED

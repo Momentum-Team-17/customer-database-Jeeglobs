@@ -18,14 +18,14 @@ console.log('main.js linked');
 
 
 // grab <section id="customer-container"><section>
-let container = document.querySelector('#customer-container');
+const container = document.querySelector('#customer-container');
 
 // loop function buildCustomerHtml
 for (let customer of customers) {
     buildCustomerHtml(customer);
 }
 
-// FUNCTION FOR CAPITALIZING NAMES
+// FUNCTION FOR CAPITALIZING NAMES -- called in line 53
 // https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -44,7 +44,6 @@ function buildCustomerHtml(individual) {
     thumbElement.classList.add('thumbnail');
     thumbElement.src = individual.picture.large;
     thumbElement.alt = "Customer Image";
-    // not sure if .alt is actually adding the alt to the img
     cardElement.appendChild(thumbElement);
 
     // nameElement === <h2 class="full-name">(nameText)</h2>
